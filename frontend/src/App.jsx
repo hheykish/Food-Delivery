@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Home from './pages/Home/Home'
+import Contact from './pages/Contact/Contact'
+import About from './pages/About/About'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
@@ -23,6 +25,8 @@ const App = () => {
         <Navbar setShowLogin={setShowLogin}/>
         <Routes>
           <Route path='/' element={<Home />}/>
+          <Route path='/contact' element={<Contact />}/>
+          <Route path='/about' element={<About />}/>
           <Route path='/cart' element={<Cart />}/>
           <Route path='/order' element={<PlaceOrder />}/>
           <Route path='/myorders' element={<MyOrders />}/>
